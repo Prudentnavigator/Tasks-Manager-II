@@ -23,5 +23,28 @@ o If the user selects a task, they should be able to choose to either mark the t
   date of the task can be edited. The task can only be edited if it has not yet been completed.
 
 ● Add an option to generate reports to the main menu of the application. (gr - generate reports)
-● When the user chooses to generate reports, two text files, called tasks_overview.txt and user_overview.txt, should be generated.
+
+● When the user chooses to generate reports, two text files, called tasks_overview.txt and user_overview.txt, should  be generated.
   Both these text files should output data in a user-friendly, easy to read manner.
+  
+● tasks_overview.txt should contain:
+  o The total number of tasks that have been generated and tracked using the task_manager.py.
+  o The total number of completed tasks.
+  o The total number of uncompleted tasks.
+  o The total number of incomplete tasks that are overdue.
+  o The percentage of incomplete tasks.
+  o The percentage of tasks overdue.
+  
+● user_overview.txt should contain:
+  o The total number of users registered.
+  o The total number of tasks that have been generated and tracked.
+  o For each user also describe:
+  o The total number of tasks assigned to that user.
+  o The percentage of the total number of tasks that have been assigned to that user.
+  o The percentage of the tasks assigned to that user that have been completed.
+  o The percentage of the tasks assigned to that user that still must be completed.
+  o The percentage of the tasks assigned to that user that have not yet been completed and are overdue.
+  
+● Modify the menu option that allows the admin to display statistics so that the reports generated are read from tasks_overview.txt
+  and user_overview.txt and displayed on the screen in a user-friendly manner. If these files don't exist (because the user hasn't
+  selected to generate them yet), first call the code to generate the text files.
