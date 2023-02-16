@@ -23,8 +23,7 @@ def user_login():
     
         # Open user.txt file and until username and password entered match one of the
         #   username  and corresponding password in the file, keep requesting to login.
-        #   Once there is match, quit loop.
-    
+        #   Once there is match, quit loop.    
         with open('user.txt', 'r') as user_data:
             u_name = ""
             passwd = ""
@@ -662,5 +661,3 @@ while True:
     # When selected is not in the menu, display an error message.
     else:
         print("\n\t\t\t***You have made a wrong choice, Please Try again***\n")
-
-
